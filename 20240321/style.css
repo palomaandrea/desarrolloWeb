@@ -1,0 +1,17 @@
+th, td{
+    border: 1px solid;
+}
+
+#TdGato{
+    background-color: blueviolet;
+    color: azure;
+}
+
+.col-edad{
+    background-color: rgb(47, 0, 92);
+    color: rgb(184, 133, 96);
+}
+
+table{
+    border: 1px solid;
+}

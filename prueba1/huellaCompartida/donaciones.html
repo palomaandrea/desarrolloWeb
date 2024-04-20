@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--agregar bs5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!--fin bs5-->
+    <title>Donaciones</title>
+</head>
+<body>
+    <section class="barra-nav">
+        <!--navbar-->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Huella Compartida</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="tienda.html" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Tienda
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="tiendaPerros.html">Perros</a></li>
+                                <li><a class="dropdown-item" href="tiendaGatos.html">Gatos</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="fundacionNuestraHuella.html">Fundación Nuestra Huella</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="donaciones.html">Donaciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Somos parte de Fundación Nuestra Huella</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="¿Qué deseas buscar?"
+                            aria-label="Búsqueda">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+                <img scr="img/Fundacion1.jpg" whidth="300" />
+            </div>
+        </nav>
+
+    </section>
+
+    <section class=""container mt-5>
+        <h2 class="text-center mb-4">Donaciones</h2>
+        <div class="row">
+            <!-- Imagen 1 -->
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="img/Fundacion1.jpg" class="card-img-top" alt="Donación 1" onclick="mostrarDescripcion('desc1')">
+                    <div class="card-body">
+                        <h5 class="card-title">Fudación Mis Peluditos</h5>
+                        <div id="desc1" class="descripcion">
+                            <p>Nuestro trabajo fundamentalmente está en terreno;</p> 
+                            <p>en las calles de la capital y rincones de las comunas</p>
+                            <p>que hace años vemos y monitoreamos, sin embargo, las manos</p>
+                            <p> se hacen pocas y lamentablemente quedan much@s en el camino sin ayuda.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Imagen 2 -->
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="img/Fundacion2.jpg" class="card-img-top" alt="Donación 2" onclick="mostrarDescripcion('desc2')">
+                    <div class="card-body">
+                        <h5 class="card-title">Fundación Ojitos</h5>
+                        <div id="desc2" class="descripcion">
+                            <p>Aquí encontrarás variadas formas de ser parte</p>
+                            <p>de este proyecto y darle ESPERANZA a much@s animalit@s</p>
+                            <p>en peligro y sin hogar.</p> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Imagen 3 -->
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="img/Fundacion3.jpg" class="card-img-top" alt="Donación 3" onclick="mostrarDescripcion('desc3')">
+                    <div class="card-body">
+                        <h5 class="card-title">Fundación Callejeros</h5>
+                        <div id="desc3" class="descripcion">
+                            <p>Estamos mentalizad@s y trabajamos a diario, no sólo en salvar vidas de mascotas,</p>
+                            <p>sino que en educar, informar, contagiar y concientizar a la población para que </p>
+                            <p>en un futuro próximo todos puedan realizar la labor que hoy en día desarrollan </p>
+                            <p>un@s poc@s y para ello, dependemos de ti.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Imagen 4 -->
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="img/Fundacion4.jpg" class="card-img-top" alt="Donación 4" onclick="mostrarDescripcion('desc4')">
+                    <div class="card-body">
+                        <h5 class="card-title">Fundación Ladridos</h5>
+                        <div id="desc4" class="descripcion">
+                            <p>Queríamos darle una ESPERANZA concreta de</p>
+                            <p> salvación, rehabilitación y protección</p>
+                            <p>indefinida. Derribamos barreras burocráticas</p>
+                            <p> y sociales logrando formar esta ONG que comenzó</p>
+                            <p> apadrinando una agrupación comunal de la comuna </p>
+                            <p>de Cerro Navia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function mostrarDescripcion(id) {
+            var descripcion = document.getElementById(id);
+            if (descripcion.style.display === "none") {
+                descripcion.style.display = "block";
+            } else {
+                descripcion.style.display = "none";
+            }
+        }
+    </script>
+
+        <!--fin navbar-->
+</body>
+</html>
